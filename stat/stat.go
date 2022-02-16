@@ -213,8 +213,6 @@ func loop() {
 
 				sendBuf.Reset()
 
-				sendBuf.WriteString(fmt.Sprintf("%s,ip=$IP,hostname=%s", aw.proc, aw.hostname))
-
 				for i := 0; i < len(aw.tags); i++ {
 					sendBuf.WriteString(fmt.Sprintf(",t%d=%s", i+1, aw.tags[i]))
 				}
