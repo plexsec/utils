@@ -153,7 +153,7 @@ func add(attr string, v int64, t attrType) {
 //attr:通过"."区分多个属性，格式为 tablename[.attr1]
 //上报格式为 瞬时值,次数,最大值,最小值
 func Instant(attr string, v int64) {
-	if attr == "" || v == 0 || aw == nil {
+	if attr == "" || aw == nil {
 		return
 	}
 	aw.sl.Lock()
