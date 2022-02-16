@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/plexsec/log"
-	"github.com/plexsec/stat"
 	"github.com/plexsec/utils/config"
+	"github.com/plexsec/utils/log"
+	"github.com/plexsec/utils/stat"
 )
 
 type Config struct {
