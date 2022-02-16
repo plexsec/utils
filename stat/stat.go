@@ -214,7 +214,7 @@ func loop() {
 				sendBuf.Reset()
 
 				for i := 0; i < len(aw.tags); i++ {
-					sendBuf.WriteString(fmt.Sprintf(",t%d=%s", i+1, aw.tags[i]))
+					sendBuf.WriteString(fmt.Sprintf("t%d=%s", i+1, aw.tags[i]))
 				}
 
 				for i := 0; i < len(attrs); i++ {
